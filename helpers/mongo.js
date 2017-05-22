@@ -25,8 +25,8 @@ var DB = (function () {
             return es6_promise_1.Promise.resolve();
         return client.connect(config.mongodb)
             .then(function (db) {
-            _this._db = db;
-            _this._persons = db.collection('persons');
+            _this._db = db.db('examen');
+            _this._persons = _this._db.collection('persons');
             console.log('connection done');
         })
             .catch(function (err) { return console.log(err); });

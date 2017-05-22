@@ -24,8 +24,8 @@ export class DB {
 
         return client.connect(config.mongodb)
             .then(db => {
-                this._db = db;
-                this._persons = db.collection('persons');
+                this._db = db.db('examen');
+                this._persons = this._db.collection('persons');
                 console.log('connection done');
             })
             .catch(err => console.log(err)); 
