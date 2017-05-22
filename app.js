@@ -1,7 +1,9 @@
-'use strict';
+"use strict";
 
 // ejm:
-var DB = require('./helpers/db');
-var db = new DB();
+var mongo = require('./helpers/mongo');
+var db = new mongo.DB();
 
-db.connect();
+db.connect().then(function () {
+    console.log(db.persons)
+});
