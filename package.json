@@ -1,0 +1,24 @@
+{
+  "name": "examen-node",
+  "version": "1.0.0",
+  "description": "examen practivo de nodejs",
+  "main": "app.js",
+  "scripts": {
+    "db": "sudo mongod",
+    "app": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffaav/examen-node.git"
+  },
+  "keywords": [],
+  "author": "tismart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffaav/examen-node/issues"
+  },
+  "homepage": "https://github.com/jeffaav/examen-node#readme",
+  "dependencies": {
+    "mongodb": "2.2.26"
+  }
+}
