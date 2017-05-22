@@ -2,7 +2,7 @@ import { MongoClient, Db, Collection } from 'mongodb';
 import { Promise } from 'es6-promise';
 
 
-const config = require('../config.json') as Config;
+const config = require('../../config.json') as Config;
 const client = new MongoClient();
 
 
